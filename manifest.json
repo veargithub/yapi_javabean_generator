@@ -1,0 +1,10 @@
+{
+    "name": "根据yapi生成javabean",
+    "manifest_version": 2,
+    "version": "1.0",
+    "author":"vart",
+    "description": "chrome扩展，在yapi的接口页面，解析dom生成javabean。",
+    "browser_action": {"default_popup": "popup.html"},
+    "content_scripts": [{"matches": ["*://*/*"],"js": ["content.js"]}],
+    "permissions": ["*://*/*","tabs"]
+  }
